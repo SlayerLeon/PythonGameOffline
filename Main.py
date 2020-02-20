@@ -25,10 +25,10 @@ while cmd != 'help':
 				if sex == (female or male):
 					break
 			h = 100 #health		
-#условия возраста: если возраст X1-X2 и female, то характеристики одни, 
-#если возраст X1-X2 и male, то характеристики вторые,
-#если возраст X2-X3 и female, то характеристики третьи,
-#и соответственно, если X2-X3 и male, то характеристики четвёртые
+#condition if value AGE X1-X2 и SEX==female, then descriptions ones, 
+# if AGE X1-X2 и SEX==male, then descriptions seconds,
+# if AGE X2-X3 и female, then descriptions thirty,
+# and accordingly if X2-X3 и SEX==male, then descriptions fourty
 			if (age == [15..20]) and (sex == 'female'):
 				f = random.randint(100, 175) #force
 				s = int(10) #skills
